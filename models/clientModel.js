@@ -10,7 +10,7 @@ function findAll() {
 
 function findById(id) {
   return new Promise((resolve, reject) => {
-    const client = clients.find((p) => p.id === id);
+    const client = clients.find((c) => c.id === id);
     resolve(client);
   });
 }

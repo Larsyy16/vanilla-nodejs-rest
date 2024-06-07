@@ -8,7 +8,7 @@ const {
 } = require("../controllers/clientController");
 
 const server = http.createServer((req, res) => {
-  if (req.url === "/data/clients" || req.url ==="/" && req.method === "GET") {
+  if (req.url === "/data/clients" && req.method === "GET" || req.url ==="/" && req.method === "GET") {
     getClients(req, res);
   } else if (
     req.url.match(/\/data\/clients\/([0-9]+)/) &&
