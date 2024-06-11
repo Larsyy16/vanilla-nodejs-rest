@@ -2,7 +2,6 @@ const client = require("../models/clientModel");
 
 const { getPostData } = require("../utils");
 
-
 async function getClients(req, res) {
   try {
     const clients = await client.findAll();
